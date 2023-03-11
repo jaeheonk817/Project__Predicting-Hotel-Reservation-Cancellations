@@ -68,9 +68,9 @@ Descriptions on attributes of the data are contained in the data dictionary that
 
 ![image](https://user-images.githubusercontent.com/122312679/224463819-288f133c-796a-402e-a1f7-6601fb15d295.png)
 
-This graph shows that every one out of three cancellations are canceled in our dataset. In other words, if we guessed that every reservation is kept, then we would correctly predict the outcome 2 out of 3 times. We are going to try different machine learning classification models that perform better than this, hopefully a lot better.
+This graph shows that every one out of three reservations are canceled in our dataset. In other words, if we guessed that every reservation is kept, then we would correctly predict the outcome 2 out of 3 times. We are going to try different machine learning classification models that perform better than this, hopefully a lot better.
 
-We will go on to make:
+We will go on to make different models:
 - Logistic Regression
 - Decision Tree
 - K-Nearest Neighbors
@@ -78,7 +78,7 @@ We will go on to make:
 - Random Forest
 - XG Boost
 
-models and visualize which ones work best.
+### Individual Models Results
 
 <table>
   <tr>
@@ -88,6 +88,8 @@ models and visualize which ones work best.
 </table>
 
 `Decision Tree`, `Random Forest` and `XGBoost` have surpassed both the average value on accuracy and precision. We will use these three models to create our ensemble models. We will try `Stacking Classifier`, `Voting Classifier` and `Gradient Boost` and pick the one that works best based on their performance metrics.
+### Ensemble Models Results
+
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/122312679/224465243-c2cefa1e-0e3e-4f37-a2e3-2b73c4dc881f.png" width="400" />
@@ -96,8 +98,7 @@ models and visualize which ones work best.
 
 All three ensemble models work better than any of the individual models. `Stacking Classifier` does best in both accuracy and precision. Therefore we will choose this as our final model. However, difference in performances are subtle and `Voting Classifier` was the second best performer at much quicker pace. If the stakeholder wants a quick and economic computation, then this model could be a good alternative.
 
-We will now dig deeper into our final model.
-We noticed some important features are:
+After surveying feature importances, we noticed that some important features are:
 - Month of Arrival
 - Reservation Segment Type
 - Lead Time
@@ -106,7 +107,19 @@ We noticed some important features are:
 
 We also noticed some less important features:
 - Meal Plan Types
-- Number of Previous Cancellations
+- Number of Previous 
+
+
+
+
+
+
+
+
+
+
+
+lations
 - Room Types
 
 
@@ -141,7 +154,7 @@ In this part, we will make meaningful recommendations to Hilton and emphasize an
 ### Discovery 2: Special requests are welcome!
 ![image](https://user-images.githubusercontent.com/122312679/224465746-4972a7fd-dc90-4bee-8410-2a02ae2e4dae.png)
 - Any customer-specific requests are not welcome to the businesses.
-- However, in this specific case of dealing with cancellations, higher number of special requests guarantee non-cancellations. It could be possible that specific plans and expectations of customers equate to reservation confirmations.
+- However, in this specific case of dealing with cancellations, higher number of special requests guarantee non-cancellations. It could be possible that specific plans and expectations from customers show their determination for the stay.
 
 ## Next Steps
 <b>For better correctness:</b>
@@ -151,11 +164,8 @@ In this part, we will make meaningful recommendations to Hilton and emphasize an
   - Geographic location where reservation was made
   - Time it took for reservation to be made from the start (for online reservations)
   
-- Maybe different ensemble methods can be used to enhance performance. This project will continue to be updated for hyperparameter tuning on ensemble. 
+- Maybe different ensemble methods can be used to enhance model performance. This project will continue to be updated for additional hyperparameter tunings.
 
 <b>For better generalizations:</b>
-- This model was built based only on data generated from a single hotel. It could be overfitting to this specific hotel. To be generalized for predictions all across the globe, data from different hotels from different countries can help a lot.
-
-
-
+- This model was built based only on data generated from a single hotel. It could be overfitting to this specific hotel. To be generalized for predictions for hotels all across the globe, data from different hotels from different countries should help a lot.
 
