@@ -63,3 +63,26 @@ Descriptions on attributes of the data are contained in the data dictionary that
 `booking_status`: Flag indicating if the booking was canceled or not.
 
 </details>
+
+# Modeling / Evaluation
+
+![image](https://user-images.githubusercontent.com/122312679/224463819-288f133c-796a-402e-a1f7-6601fb15d295.png)
+
+This graph shows that every one out of three cancellations are canceled in our dataset. In other words, if we guessed that every reservation is kept, then we would correctly predict the outcome 2 out of 3 times. We are going to try different machine learning classification models that perform better than this, hopefully a lot better.
+
+We will go on to make:
+- Logistic Regression
+- Decision Tree
+- K-Nearest Neighbors
+- Bayes Classification
+- Random Forest
+- XG Boost
+models and visualize which ones work best.
+
+<table>
+  <tr>
+    <td align="center"><img src="https://user-images.githubusercontent.com/122312679/224464305-df7dd192-72ec-468a-9757-27c34bdd0000.png" width="400px"></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/122312679/224464314-69245ce2-77ef-47fb-85c5-326787d30a2e.png" width="400px"></td>
+  </tr>
+</table>
+
