@@ -87,4 +87,13 @@ models and visualize which ones work best.
   </tr>
 </table>
 
-`Decision Tree`, `Random Forest` and `XGBoost` have surpassed both the average value on accuracy and precision. We will use these three models to create our final ensemble model.
+`Decision Tree`, `Random Forest` and `XGBoost` have surpassed both the average value on accuracy and precision. We will use these three models to create our ensemble models. We will try `Stacking Classifier`, `Voting Classifier` and `Gradient Boost` and pick the one that works best based on their performance metrics.
+
+<table>
+  <tr>
+    <td align="center"><img src=![image](https://user-images.githubusercontent.com/122312679/224464975-642519b1-e6b5-4909-8209-f19a1e30073c.png) width="400px"></td>
+    <td align="center"><img src=![image](https://user-images.githubusercontent.com/122312679/224464990-581bfb18-d2cf-4223-ad53-7d6d72ac817f.png) width="400px"></td>
+  </tr>
+</table>
+
+
