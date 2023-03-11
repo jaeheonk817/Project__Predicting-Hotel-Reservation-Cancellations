@@ -87,3 +87,4 @@ models and visualize which ones work best.
   </tr>
 </table>
 
+`Decision Tree`, `Random Forest` and `XGBoost` have surpassed both the average value on accuracy and precision. We will use these three models to create our final ensemble model.
