@@ -169,3 +169,17 @@ In this part, we will make meaningful recommendations to Hilton and emphasize an
 <b>For better generalizations:</b>
 - This model was built based only on data generated from a single hotel. It could be overfitting to this specific hotel. To be generalized for predictions for hotels all across the globe, data from different hotels from different countries should help a lot.
 
+## Repository Structure
+```
+├── data
+│   └── data.csv
+├── images (images generated from notebook for powerpoint)
+├── pdf
+│   ├──powerpoint.pdf
+│   └──notebook.pdf
+├── .gitignore
+├── powerpoint.pptx
+├── notebook.ipynb
+└── README.md
+
+```
