@@ -77,6 +77,7 @@ We will go on to make:
 - Bayes Classification
 - Random Forest
 - XG Boost
+
 models and visualize which ones work best.
 
 <table>
